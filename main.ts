@@ -26,7 +26,7 @@ class Order implements Actionable<Order>{
     }
 }
 
-class Placed implements Actionable<State> {
+class Placed implements State {
     cancel(): State {
         console.log("Cancelling the order");
         return new Cancelled();
